@@ -1,0 +1,98 @@
+[
+  {
+    "id": "skrzydelka",
+    "name": "Skrzydełka z grilla",
+    "description": "Soczyste skrzydełka marynowane i grillowane na ogniu.",
+    "price": 10,
+    "unit": "za 100 gram",
+    "image": "/assets/skrzydelka.webp"
+  },
+  {
+    "id": "lula-kebab-kurczak",
+    "name": "Lula kebab (kurczak)",
+    "description": "Delikatny kebab z mięsa drobiowego z cebulą i przyprawami.",
+    "price": 20,
+    "unit": "za 200 gram",
+    "image": "/assets/kebab.jpg"
+  },
+  {
+    "id": "lula-kebab-wieprzowina",
+    "name": "Lula kebab (wieprzowina)",
+    "description": "Soczysty kebab z wieprzowego mięsa mielonego, doprawiony w stylu orientalnym.",
+    "price": 22,
+    "unit": "za 200 gram",
+    "image": "/assets/lula-kebab.jpg"
+  },
+  {
+    "id": "lula-kebab-mix",
+    "name": "Lula kebab (mix)",
+    "description": "Mieszanka kurczaka, wieprzowiny i wołowiny z orientalnymi przyprawami.",
+    "price": 25,
+    "unit": "za 200 gram",
+    "image": "/assets/lula-kebabmix.webp"
+  },
+  {
+    "id": "karkowka",
+    "name": "Szaszlyk",
+    "description": "Delikatna karkówka wieprzowa marynowana w naszym sosie.",
+    "price": 15,
+    "unit": "za 100 gram",
+    "image": "/assets/szaszl.jpg"
+  },
+  {
+    "id": "zeberka",
+    "name": "Żeberka z ognia",
+    "description": "Żeberka wieprzowe grillowane na ogniu z sosem BBQ lub musztardowym.",
+    "price": 36,
+    "unit": "za 400 gram",
+    "image": "/assets/rebra1.jpg"
+  },
+  {
+    "id": "zeberka medowe",
+    "name": "Żeberka medowe",
+    "description": "Żeberka wieprzowe grillowane na ogniu w sosie medowym.",
+    "price": 36,
+    "unit": "za 400 gram",
+    "image": "/assets/rzeberka.jpg"
+  },
+  {
+    "id": "zeberka pikantne",
+    "name": "Żeberka z ognia pikantne",
+    "description": "Żeberka wieprzowe grillowane na ogniu w sosie pikantnym.",
+    "price": 36,
+    "unit": "za 400 gram",
+    "image": "/assets/images.jpeg"
+  },
+  {
+    "id": "ziemniaki-boczek",
+    "name": "Ziemniaki z boczkiem",
+    "description": "Grillowane na węglu ziemniaki z boczkiem, który nadaje wyjątkowy smak.",
+    "price": 6,
+    "unit": "za 100 gram",
+    "image": "/assets/ziemniaki-slonina.webp"
+  },
+  {
+    "id": "warzywa-grill",
+    "name": "Warzywa z grilla",
+    "description": "Miks grillowanych pieczarek, bakłażana, papryki i cukinii.",
+    "price": 10,
+    "unit": "za 100 gram",
+    "image": "/assets/warzywa.webp"
+  },
+  {
+    "id": "ziemniaki-wiejskie",
+    "name": "Ziemniaki po wiejsku",
+    "description": "Smażone we fryturze z dodatkiem czosnku i świeżych ziół.",
+    "price": 7,
+    "unit": "za 100 gram",
+    "image": "/assets/ziemniakizczosnkiem.webp"
+  },
+  {
+    "id": "salatka-czoban",
+    "name": "Sałatka Czołban",
+    "description": "Pomidor, ogórek, papryka, cebula, zielenina, olej roślinny.",
+    "price": 14,
+    "unit": "za porcje",
+    "image": "/assets/salat-czoban.webp"
+  }
+]

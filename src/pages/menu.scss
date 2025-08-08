@@ -1,0 +1,95 @@
+@import "../style/settings/mixins";
+@import "../style/settings/variables";
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+
+  &__item {
+    background-color: white;
+    border: 1px solid $color-spark;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .menu__info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex-grow: 1;
+
+      h3 {
+        font-size: 20px;
+        margin: 0;
+        color: $color-ember;
+        font-weight: bold;
+      }
+
+      .menu__desc {
+        font-size: 14px;
+        color: $color-ember;
+        line-height: 1.4;
+      }
+
+      .menu__price {
+        font-weight: bold;
+        color: $color-primary;
+        font-size: 16px;
+      }
+
+      button {
+        margin-top: auto;
+        padding: 10px 15px;
+        background-color: $color-lava;
+        color: $color-spark;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #a93226;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.menu__footer {
+  background-color: $color-lava;
+  padding: 10px 0 50px;
+  text-align: center;
+
+  .menu__cart-btn {
+    padding: 20px 40px;
+    background-color: $color-spark;
+    color: $color-primary;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-spark;
+    }
+  }
+}

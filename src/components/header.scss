@@ -1,0 +1,85 @@
+@import "../style/settings/mixins";
+@import "../style/settings/variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background: linear-gradient($color-ember 75%, $color-lava);
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__title {
+    font-size: 24px;
+    color: $color-spark;
+    font-weight: bold;
+  }
+
+  &__hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 20px;
+
+    @include tablet {
+      gap: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-spark;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+    &.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background-color: $color-lava;
+      padding: 20px;
+      border-top: 1px solid #ccc;
+      gap: 15px;
+    }
+  }
+
+
+  @include mobile {
+    align-items: center;
+    justify-content: space-between;
+
+    &__hamburger {
+      display: block;
+      color: $color-spark;
+    }
+
+    &__nav {
+      display: none;
+      width: 100%;
+    }
+  }
+}
+

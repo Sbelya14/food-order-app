@@ -1,0 +1,69 @@
+@import "../style/settings/mixins";
+@import "../style/settings/variables";
+
+.order {
+  background-color: #ffeaea;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+
+  @include mobile {
+    max-width: 400px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: $color-lava;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: $color-lava;
+    }
+
+    input {
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+
+      &.error {
+        border-color: $color-lava;
+      }
+    }
+  }
+
+  &__error {
+    color: $color-lava;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  &__button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: $color-primary-light;
+    color: $color-spark;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-lava;
+    }
+  }
+}

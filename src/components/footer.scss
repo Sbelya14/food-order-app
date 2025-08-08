@@ -1,0 +1,61 @@
+@import "../style/settings/mixins";
+@import "../style/settings/variables";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: $color-ember;
+  color: $color-spark;
+
+  &__left,
+  &__right {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__left {
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  &__right {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @include mobile {
+
+    &__left,
+    &__right {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__left {
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    &__right {
+      flex-direction:  column;
+
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}

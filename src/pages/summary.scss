@@ -1,0 +1,92 @@
+@import "../style/settings/mixins";
+@import "../style/settings/variables";
+
+.summary {
+  background-color: #ffeaea;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 40px auto;
+
+  @include mobile {
+    max-width: 400px;
+  }
+
+  &__title {
+    text-align: center;
+    color: $color-lava;
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    background-color: #fff0f0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid $color-lava;
+  }
+
+  &__item-name {
+    margin: 0 0 8px;
+    color: $color-ember;
+  }
+
+  &__item-total {
+    font-weight: bold;
+    color: $color-lava;
+  }
+
+  &__total {
+    font-size: 36px;
+    text-align: center;
+    margin: 25px 0;
+    color: $color-lava;
+    font-weight: bold;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__button {
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &.back {
+      background-color: $color-smoke;
+    }
+
+    &.order_sum {
+      background-color: $color-primary-light;
+      color: $color-spark;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__link {
+    color: $color-lava;
+    font-weight: bold;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "../style/settings/mixins";
+@import "../style/settings/variables";
+
+.thankyou {
+  text-align: center;
+  margin-top: 80px;
+  padding: 20px;
+  color: $color-spark;
+
+  h2 {
+    font-size: 60px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 34px;
+    margin-bottom: 225px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: $color-primary;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #a93226;
+    }
+  }
+}
